@@ -280,6 +280,9 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.services .serv-content .card .box .text a{
+    color: #fff;
+}
 .services .serv-content .card:hover{
     background: crimson;
 }
@@ -302,6 +305,9 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+
+
 
 /* skills section styling */
 
