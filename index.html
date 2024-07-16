@@ -1,226 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="main-container">
-
-        <section id="1" class="one">
-            <div class="profile-content">
-                <div class="left-content">
-                    <h1>Hello World!</h1>
-                    <h2>I'm VIJAY CHAVAN.</h2>
-                    <h3>| Software Engineer | Tech Enthusiast |</h3>
-                  </div>
-                  <div class="right-content">
-                    <img src="profile2.png" alt="Vijay Chavan">
-                  </div>
-                <!-- <img src="profile.png" alt="profile image" srcset=""> -->
-            </div>
-            <button> 
-                <span> <a href="#2">Read More</a></span>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vijay Chavan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </section>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Vijay</h2>
+                <p class="hero_desc">I am a Software Engineer and a Tech enthusiast!</p>
+            </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="2" class="two">
-            <div class="container">
-                <div class="content">
-                    <h1><u>ABOUT</u></h1>
-                    <br>
-                    <p>👋 Hi there! I'm Vijay Chavan, a Software Engineer at Tata Consultancy Services in Pune, currently working with Jaguar Land Rover. My tech journey has been exciting, focusing on languages like C, C++, Java, and JavaScript, along with backend frameworks such as Spring Boot, Microservices, and Hibernate. I specialize in Kafka and RabbitMQ for streaming integration. <br> <br> 🖥️ Beyond coding, I enjoy exploring new tech trends and working on personal projects to hone my skills and satisfy my curiosity. I'm enthusiastic about collaborating with like-minded tech enthusiasts to make a meaningful impact. Let's connect and explore opportunities together!</p>
-                    <br>
-                    <h1> <u>SKILLS</u></h1>
-                    <br>
-                    <div class="container">
-                        <div class="skills-up">
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/profile.png" class= "imageAboutPage" alt="">
+                </div>
 
-                            <div class="skill-logo">
-                                <img src="/skills-logos/java.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/c.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/c++.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/js.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/spring.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/junit.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/mongo.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/mysql.png" alt="" srcset="">
-                            </div>
+                <div class="col-lg-8">
+                    <p> 👋 Hi there! I'm Vijay Chavan, a Software Engineer at Tata Consultancy Services in Pune, currently working with Jaguar Land Rover. My tech journey has been exciting, focusing on languages like C, C++, Java, and JavaScript, along with backend frameworks such as Spring Boot, Microservices, and Hibernate. I specialize in Kafka and RabbitMQ for streaming integration.
 
-                        </div>
-
-                        <div class="skills-down">
-                            
-                            <div class="skill-logo">
-                                <img src="/skills-logos/kafka.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/rabbit.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/maven.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/docker.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/jira.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/react.png" alt="" srcset="">
-                            </div>
-                            <div class="skill-logo">
-                                <img src="/skills-logos/maven.png" alt="" srcset="">
-                            </div>
-
-                        </div>
-                    </div>
+                    </p>
+                    <p>
+                        🖥️ Beyond coding, I enjoy exploring new tech trends and working on personal projects to hone my skills and satisfy my curiosity. I'm enthusiastic about collaborating with like-minded tech enthusiasts to make a meaningful impact. Let's connect and explore opportunities together!
+                                                
+                    </p>
+                    <!-- <div class="row mt-3">
+                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div> -->
                 </div>
             </div>
-        </section>
+    </section>
 
-        <section id="3" class="three">
-            <div class="container">
-
-                <div class="content">
-
-                    <h1><u>EXPERIENCE</u></h1>
-                    <br><br>
-                    <div class="experience-item">
-                        <div class="left">
-                            <img src="tcs-logo-vector.svg" alt="" srcset="">
-                            <h3>Software Engineer</h3>
-                            <p>July 2022 - Present</p>
-                            
-                        </div>
-                        <div class="right">
-                            <h3>Tata Consultancy Services (TCS)</h3>
-                            <ul>
-                                <li>• Developed and maintained Restful web applications.</li>
-                                <li>• Implemented new features and enhancements.</li>
-                                <li>• Collaborated with team members on projects.</li>
-                                <li>• Mentored junior team members.</li>
-                                <li>• Investigated and debugged code issues.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br><br>
-                    <h1><u>PROJECTS</u></h1>
-                    <br><br>
-                    <div class="project-cards">
-                        <div class="cards">
-                            <h2>Expense Tracker</h2>
-                            <p>• Crafted Expense Tracker app with Spring Boot & MongoDB for seamless financial management.
-                               <br> • Users record, categorize expenses, aiding tracking & analysis. Ensures robust expense monitoring within Spring Boot
-                                framework.</p>
-                        </div>
-                        <div class="cards">
-                            <h2>QuizzyWhiz – Quiz Application</h2>
-                            <p>• QuizzyWhiz is an interactive quiz application designed to test users' knowledge of Spring Boot.
-                               <br> • Utilizes microservices with Spring Boot, Thymeleaf, MongoDB, RabbitMQ, and MySQL for seamless functionality and efficient data management.</p>
-                        </div>
-                        <div class="cards">
-                            <h2>Employee Management System</h2>
-                            <p>•Developed Employee Management System using Spring Boot, enabling CRUD operations for employee data with MySQL
-                                backend and Thymeleaf frontend.
-                        </div>
-                    </div>
+    <section id="experience">
+        <div class="container mt-4 pt-4">
+            
+            <div class="row">
+                <div class="col">
+                  <h1 class="text-center">Education</h1>
                 </div>
-            </div>
-        </section>
+                <div class="col">
+                  <h1 class="text-center">Experience</h1>
+                </div>
+              </div>
 
-        <section id="4" class="four">
-            <div class="container">
-
-                <h1 class="brand"><span>Contact Me</span></h1>
-            
-                <div class="wrapper">
-            
-                    <!-- COMPANY INFORMATION -->
-                    <div class="company-info">
-                        <h3>Vijay Chavan</h3>
-            
+            <div class="row">
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
                         <ul>
-                            <li><i class="fa fa-road"></i> Pune, India</li>
-                            <li><i class="fa fa-phone"></i> +91 9689756247</li>
-                            <li><i class="fa fa-envelope"></i> Vjchavan582000@gmail.com</li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <span class="time">2019 - 2022</span>
+                                <h5>SPPU University, Pune</h5>
+                                <p>Bachelor's of Computer Engineering (GPA: 9.44 / 10.00)</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <span class="time">2016 - 2019</span>
+                                <h5>AISSMS Polytechnic, Pune</h5>
+                                <p>Diploma in Computer Engineering (Percentage: 81%)</p>
+                            </li>
                         </ul>
                     </div>
-                    <!-- End .company-info -->
-            
-                    <!-- CONTACT FORM -->
-                    <div class="contact">
-                        <h3>E-mail Us</h3>
-            
-                        <form id="contact-form">
-            
-                            <p>
-                                <label>Name</label>
-                                <input type="text" name="name" id="name" required>
-                            </p>
-            
-                            <p>
-                                <label>Company</label>
-                                <input type="text" name="company" id="company">
-                            </p>
-            
-                            <p>
-                                <label>E-mail Address</label>
-                                <input type="email" name="email" id="email" required>
-                            </p>
-            
-                            <p>
-                                <label>Phone Number</label>
-                                <input type="text" name="phone" id="phone">
-                            </p>
-            
-                            <p class="full">
-                                <label>Message</label>
-                                <textarea name="message" rows="5" id="message"></textarea>
-                            </p>
-            
-                            <p class="full">
-                                <button type="submit" class="submit-btn">Submit</button>
-                            </p>
-            
-                        </form>
-                        <!-- End #contact-form -->
-                    </div>
-                    <!-- End .contact -->
-            
                 </div>
-                <!-- End .wrapper -->
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <span class="time">2022 - Present</span>
+                                <h5>Tata Consultancy Services (TCS)</h5>
+                                <p>Experienced as a Software Developer Engineer at Tata Consultancy Services Ltd, showcasing proficiency in Microservice architecture and RESTful APIs, leading to successful project outcomes.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <span class="time">2018 - 2018</span>
+                                <h5>(Internship) Honeywell Pvt Ltd</h5>
+                                <p>This internship provided me with invaluable experience in web development and database management, laying a strong foundation for my future roles in software engineering.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- End .container -->
+        </div>
+    </section>
 
-            <footer>
-                © Copyright 2024 Design by Vijay Chavan
-            </footer>
-        </section>
-    </div>
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Skills</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-laptop-code"></i>
+                            <h4 class="card-title mt-3">Programming Languages</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/java.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/c.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/c++.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/js.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-layer-group"></i>
+                            <h4 class="card-title mt-3">Frameworks</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/spring.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/kafka.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/hib.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div> 
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/react.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/apache-camel.svg" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/rabbit.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
 
-    
+                            </div>
+                        </div>
+                    </div>  
+                </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-database'></i>
+                            <h4 class="card-title mt-3">Databases</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/mysql.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/mongo.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/oracle.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fab servicesIcon fa-dev'></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/maven.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/git.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/docker.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/kub.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/graphana.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-cloud'></i>
+                            <h4 class="card-title mt-3">Cloud</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/aws.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/gcp.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">Tools</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/postman.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/linux.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img-container">
+                                      <img src="skills/intellij.png" class="img-fluid" alt="Image 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/cur.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Expense Tracker</h4>
+                            <p class="card-text">Expense tracking apps help to keep track on income, track income vs. expenses do a lot more.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Vjchavan/Expense-Tracker" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/quiz.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">QuizzyWhiz - Quiz App</h4>
+                            <p class="card-text">QuizzyWhiz is an interactive quiz application designed to test users knowledge of Spring Boot.</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Vjchavan/QuizzyWhiz" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/cric.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">CricStream</h4>
+                            <p class="card-text">Live Cricket score streaming application, developed using Java, Springboot & microservice architecture</p>
+                            <div class="text-center">
+                                <a href="https://github.com/Vjchavan/CricStream" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="display-google-map" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Pune&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="my-codefor-googlemap" href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium bootstrap themes</a><style>#display-google-map img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
 </body>
+
 </html>
